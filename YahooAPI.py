@@ -27,5 +27,5 @@ class YahooAPI:
 			return res
 
 if __name__ == "__main__" :
-	yahoo = YahooAPI("dj00aiZpPXJmNUFMVWhTUUtNYyZzPWNvbnN1bWVyc2VjcmV0Jng9ZjQ-")
+	yahoo = YahooAPI("")
 	yahoo.KeyPhrase("うんこ")
