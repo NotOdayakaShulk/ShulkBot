@@ -27,11 +27,11 @@ def shapeText(text):
 	return text
 
 if __name__ == "__main__":
-	consumerKey = "gYtqbIkCR0jNMgn8d4k9T5A4L"
-	consumerSecret = "SgoZChCN4w5bnNUSGtT98GNjjSwzsWayrnioOikOeNoZBiBLK6"
+	consumerKey = " -- Your Consumer Key -- "
+	consumerSecret = " -- Your Consumer Secret -- "
 	
-	accessToken = "999299384285184000-YIlYfcLh4mFUZNUDDvWktmPcgGZNKUu"
-	accessSecret = "WZcJaFoKPZ2MEDhylqn4E6CgLX5oD8e6Up7L23TZFfgyq"
+	accessToken = " -- Your Access Token -- "
+	accessSecret = " -- Your Access Token Secret-- "
 	
 	auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 	auth.set_access_token(accessToken, accessSecret)
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 	
 	ShulkBot = TwitterBot(api)
 	
-	yahoo = YahooAPI("dj00aiZpPXJmNUFMVWhTUUtNYyZzPWNvbnN1bWVyc2VjcmV0Jng9ZjQ-")
+	yahoo = YahooAPI(" -- Your Application ID-- ")
 	
 	ShulkBot.GetTimeline()
 	ShulkBot.ExcludeTweets()
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 		if keyPhrase is not None or "":
 			break
 	
-	vision = VisionPic("/usr/share/fonts/truetype/ricty-diminished/RictyDiminished-Regular.ttf")
+	vision = VisionPic(" -- appropriate font path -- ")
 	
 	imgResponse = requests.get( status.entities["media"][0]["media_url"] )
 	image = Image.open( BytesIO( imgResponse.content ) )

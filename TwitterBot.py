@@ -51,11 +51,11 @@ class TwitterBot:
 
 
 if __name__ == "__main__" :
-	auth = tweepy.OAuthHandler("CjulERsDeqhhjSme66ECg", "IQWdVyqFxghAtURHGeGiWAsmCAGmdW3WmbEx6Hck")
-	auth.set_access_token("999299384285184000-JUEH2ndiqEMw4a7VnJuqlueykVQK0vb", "ZfORkx9mBUALo65WHcgVjTc46OR9iSDN7kUha1IfZ6nWA")
-	ipad = tweepy.API(auth)
+	auth = tweepy.OAuthHandler(" -- Your Consumer Key -- ", " -- Your Consumer Secret -- ")
+	auth.set_access_token(" -- Your Access Token -- ", " -- Your Access Token Secret-- ")
+	api = tweepy.API(auth)
 	
-	ShulkBot = TwitterBot(ipad)
+	ShulkBot = TwitterBot(api)
 	
 	for status in ShulkBot.GetTimeline():
 		print(status.entities)

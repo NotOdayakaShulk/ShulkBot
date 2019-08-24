@@ -98,7 +98,7 @@ class VisionPic:
 	
 
 if __name__ == "__main__":
-	vision = VisionPic("/usr/share/fonts/truetype/ricty-diminished/RictyDiminished-Regular.ttf")
+	vision = VisionPic(" -- appropriate font path -- ")
 	
 	image = Image.open("test.jpg")
 	image.convert("RGBA")
