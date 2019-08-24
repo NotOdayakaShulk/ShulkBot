@@ -67,6 +67,8 @@ if __name__ == "__main__":
 	
 	vision.GenerateTagImage( icon,keyPhrase, random.randrange(1, 114514) )
 	
+	api.create_favorite(status.id)
+	
 	with tempfile.NamedTemporaryFile( prefix="Vision", suffix=".png", mode='w+') as fp:
 		vision.GenerateVisionImage( image ).save( fp.name, format="png" )
 		
